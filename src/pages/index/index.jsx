@@ -22,7 +22,7 @@ export default class Index extends Component {
   componentDidHide() {}
 
   config = {
-    navigationBarTitleText: '凌源鹭岩蕙花卉有限责任公司',
+    navigationBarTitleText: 'SweetSevenFlower',
   };
 
   constructor() {

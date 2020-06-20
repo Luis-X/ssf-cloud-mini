@@ -20,8 +20,9 @@ export default class Index extends Component {
     super(...arguments);
     this.state = {
       logo: 'https://www.jandewitenzonen.com/img/logo_head.png',
-      phone: '13019934293',
-      email: '15504222202@163.com',
+      phone: '0421-6923313',
+      email: 'lylyflower@163.com',
+      company: '凌源鹭岩蕙花卉有限责任公司',
       address: '辽宁省凌源市花卉市场南楼16号',
       markers: [
         {
@@ -73,6 +74,7 @@ export default class Index extends Component {
               src={this.state.logo}
               mode="aspectFit"
             ></Image> */}
+            <Text className="card-text">公司：{this.state.company}</Text>
             <Text className="card-text">电话：{this.state.phone}</Text>
             <Text className="card-text">邮箱：{this.state.email}</Text>
             <Text className="card-text">地址：{this.state.address}</Text>
