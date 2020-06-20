@@ -1,0 +1,68 @@
+.filter-scrollview {
+  display: flex;
+  height: calc(100% - 90px);
+}
+
+.filter-box {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-title {
+  margin-left: 10px;
+  color: #1A1210;
+  font-size: 30px;
+  line-height: 36px;
+  height: 36px;
+  font-weight: bold;
+}
+
+.filter-item-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.filter-item-title {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 10px;
+  width: 165px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: #4c4c4c;
+  font-size: 24px;
+  background-color: #f2f2f2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.filter-bottom-tools {
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.filter-bottom-reset-button {
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+  font-size: 30px;
+  width: 50%;
+  color: #c4c4c4;
+  background-color: #f2f2f2;
+}
+.filter-bottom-search-button {
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+  font-size: 30px;
+  width: 50%;
+  color: #ffffff;
+  background-color: #46a430;
+}

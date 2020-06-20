@@ -1,0 +1,127 @@
+[
+  {
+    "optionTitle": "标签",
+    "options": [
+      { "title": "新的", "value": "NIEUW", "name": "LINT" },
+      { "title": "热门", "value": "POPULAIR", "name": "LINT" },
+      { "title": "家庭种植", "value": "Ja", "name": "ZELFTEELT" },
+      { "title": "独家", "value": "Ja", "name": "EXCLUSIEF" }
+    ]
+  },
+  {
+    "optionTitle": "花期",
+    "options": [
+      { "title": "中期开放", "value": "MIDDEN", "name": "BLOEIPERIODE" },
+      { "title": "早开", "value": "VROEG", "name": "BLOEIPERIODE" },
+      { "title": "晚开", "value": "LAAT", "name": "BLOEIPERIODE" }
+    ]
+  },
+  {
+    "optionTitle": "EPW",
+    "options": [
+      { "title": "43", "value": "43", "name": "EPW" },
+      { "title": "44", "value": "44", "name": "EPW" },
+      { "title": "45", "value": "45", "name": "EPW" },
+      { "title": "46", "value": "46", "name": "EPW" },
+      { "title": "47", "value": "47", "name": "EPW" },
+      { "title": "48", "value": "48", "name": "EPW" },
+      { "title": "49", "value": "49", "name": "EPW" },
+      { "title": "50", "value": "50", "name": "EPW" },
+      { "title": "51", "value": "51", "name": "EPW" },
+      { "title": "52", "value": "52", "name": "EPW" }
+    ]
+  },
+  {
+    "optionTitle": "9℃适宜",
+    "options": [
+      { "title": "否", "value": "NEE", "name": "GESCHIKT9C" },
+      { "title": "是", "value": "JA", "name": "GESCHIKT9C" }
+    ]
+  },
+  {
+    "optionTitle": "群组",
+    "options": [
+      { "title": "CORONET", "value": "CORONET", "name": "GROEP" },
+      { "title": "Fosteriana", "value": "FOSTERIANA", "name": "GROEP" },
+      { "title": "Viridiflora", "value": "VIRIDIFLORA", "name": "GROEP" },
+      { "title": "凯旋型", "value": "TRIUMF", "name": "GROEP" },
+      { "title": "单瓣早花型", "value": "ENKEL_VROEG", "name": "GROEP" },
+      { "title": "单瓣晚花型", "value": "ENKEL_LAAT", "name": "GROEP" },
+      { "title": "百合花型", "value": "LELIEBLOEMIG", "name": "GROEP" },
+      { "title": "花边型", "value": "GEFRANJERD", "name": "GROEP" },
+      { "title": "达尔文杂交型", "value": "DARWIN_HYBRIDE", "name": "GROEP" },
+      { "title": "重瓣早花型", "value": "DUBBEL_VROEG", "name": "GROEP" },
+      { "title": "重瓣晚花型", "value": "DUBBEL_LAAT", "name": "GROEP" },
+      { "title": "鹦鹉型", "value": "PARKIET", "name": "GROEP" }
+    ]
+  },
+  {
+    "optionTitle": "颜色",
+    "options": [
+      { "title": "奶油色", "value": "CREME", "name": "KLEUR" },
+      { "title": "奶油色/粉色", "value": "CREME_ROZE", "name": "KLEUR" },
+      { "title": "奶油色/红色", "value": "CREME_ROOD", "name": "KLEUR" },
+      { "title": "杏黄色", "value": "ABRIKOOS", "name": "KLEUR" },
+      { "title": "棕色/橙色", "value": "BRUIN_ORANJE", "name": "KLEUR" },
+      { "title": "橙色", "value": "ORANJE", "name": "KLEUR" },
+      { "title": "橙色/粉色", "value": "ORANJE_ROZE", "name": "KLEUR" },
+      { "title": "橙色/绿色", "value": "ORANJE_GROEN", "name": "KLEUR" },
+      { "title": "橙色/黄色", "value": "ORANJE_GEEL", "name": "KLEUR" },
+      { "title": "浅橙色", "value": "ZALM", "name": "KLEUR" },
+      { "title": "浅橙色/橙色", "value": "ZALM_ORANJE", "name": "KLEUR" },
+      { "title": "浅紫色", "value": "LILA", "name": "KLEUR" },
+      { "title": "浅紫色/白色", "value": "LILA_WIT", "name": "KLEUR" },
+      { "title": "深紫色", "value": "DONKERPAARS", "name": "KLEUR" },
+      { "title": "深紫色/黄色", "value": "DONKERPAARS_GEEL", "name": "KLEUR" },
+      { "title": "深红色", "value": "DONKERROOD", "name": "KLEUR" },
+      { "title": "白色", "value": "WIT", "name": "KLEUR" },
+      { "title": "白色/紫色", "value": "WIT_PAARS", "name": "KLEUR" },
+      { "title": "白色/红色", "value": "WIT_ROOD", "name": "KLEUR" },
+      { "title": "白色/绿色", "value": "WIT_GROEN", "name": "KLEUR" },
+      { "title": "粉色", "value": "ROZE", "name": "KLEUR" },
+      { "title": "粉色/奶油色", "value": "ROZE_CREME", "name": "KLEUR" },
+      { "title": "粉色/橙色", "value": "ROZE_ORANJE", "name": "KLEUR" },
+      { "title": "粉色/白色", "value": "ROZE_WIT", "name": "KLEUR" },
+      { "title": "粉色/红色", "value": "ROZE_ROOD", "name": "KLEUR" },
+      { "title": "粉色/黄色", "value": "ROZE_GEEL", "name": "KLEUR" },
+      { "title": "紫色", "value": "PAARS", "name": "KLEUR" },
+      { "title": "紫色/白色", "value": "PAARS_WIT", "name": "KLEUR" },
+      { "title": "紫色/红色", "value": "PAARS_ROOD", "name": "KLEUR" },
+      { "title": "紫色/绿色", "value": "PAARS_GROEN", "name": "KLEUR" },
+      { "title": "红色", "value": "ROOD", "name": "KLEUR" },
+      { "title": "红色/奶油色", "value": "ROOD_CREME", "name": "KLEUR" },
+      { "title": "红色/棕色", "value": "ROOD_BRUIN", "name": "KLEUR" },
+      { "title": "红色/橙色", "value": "ROOD_ORANJE", "name": "KLEUR" },
+      { "title": "红色/白色", "value": "ROOD_WIT", "name": "KLEUR" },
+      { "title": "红色/粉色", "value": "ROOD_ROZE", "name": "KLEUR" },
+      { "title": "红色/绿色", "value": "ROOD_GROEN", "name": "KLEUR" },
+      { "title": "红色/黄色", "value": "ROOD_GEEL", "name": "KLEUR" },
+      { "title": "绿色/白色", "value": "GROEN_WIT", "name": "KLEUR" },
+      { "title": "绿色/粉色", "value": "GROEN_ROZE", "name": "KLEUR" },
+      { "title": "绿色/红色", "value": "GROEN_ROOD", "name": "KLEUR" },
+      { "title": "绿色/黄色", "value": "GROEN_GEEL", "name": "KLEUR" },
+      { "title": "黄色", "value": "GEEL", "name": "KLEUR" },
+      { "title": "黄色/奶油色", "value": "GEEL_CREME", "name": "KLEUR" },
+      { "title": "黄色/橙色", "value": "GEEL_ORANJE", "name": "KLEUR" },
+      { "title": "黄色/白色", "value": "GEEL_WIT", "name": "KLEUR" },
+      { "title": "黄色/粉色", "value": "GEEL_ROZE", "name": "KLEUR" },
+      { "title": "黄色/红色", "value": "GEEL_ROOD", "name": "KLEUR" },
+      { "title": "黑色", "value": "ZWART", "name": "KLEUR" }
+    ]
+  },
+  {
+    "optionTitle": "长度",
+    "options": [
+      { "title": "中等", "value": "GEMIDDELD", "name": "LENGTE" },
+      { "title": "短", "value": "KORT", "name": "LENGTE" },
+      { "title": "长", "value": "LANG", "name": "LENGTE" }
+    ]
+  },
+  {
+    "optionTitle": "水培",
+    "options": [
+      { "title": "否", "value": "NEE", "name": "WATERBROEI" },
+      { "title": "是", "value": "JA", "name": "WATERBROEI" }
+    ]
+  }
+]
