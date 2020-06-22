@@ -64,7 +64,7 @@ export default class Index extends Component {
           include-points={this.state.markers}></Map>
         <AtCard
           className="card-box"
-          note="点击联系我们"
+          note="欢迎随时联系我们"
           title="联系方式"
           thumb="http://cdn1.showjoy.com/shop/images/20200605/97WTQX54FIPCAYZZ2CSU1591351647183.png"
           onClick={this.clickPhone.bind(this)}>
