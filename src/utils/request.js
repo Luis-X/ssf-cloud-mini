@@ -45,11 +45,12 @@ response      返回值
 */
 
 function baseRequest(url, data, config, response) {
-  var host = env.host().console;
   var cookieString = cookie.getCookie();
 
+  const realUrl = checkUrl(url);
+
   Taro.request({
-    url: `${host}${url}`,
+    url: realUrl,
     data: data,
     method: config.method,
     header: {
@@ -57,7 +58,7 @@ function baseRequest(url, data, config, response) {
       'content-type': config.contentType,
     },
     success: function(res) {
-      console.debug('request', `${host}${url}\n${JSON.stringify(res)}`);
+      console.debug('request', `${realUrl}\n${JSON.stringify(res)}`);
       if (res.data) {
         response(res.data);
       } else {
@@ -70,4 +71,13 @@ function baseRequest(url, data, config, response) {
       HUD.showToastMessage('网络服务异常，请检查您的网络设置');
     },
   });
+}
+
+// 校验路径
+function checkUrl(url) {
+  var host = env.host().console;
+  if (url.startsWith('http')) {
+      return url;
+  }
+  return `${host}${url}`;
 }

@@ -10,9 +10,23 @@ export default class Index extends Component {
   componentWillMount() {}
 
   componentDidMount() {
+    const self = this;
     Taro.showShareMenu({
       withShareTicket: true,
     });
+
+    wx.cloud.init();
+
+    // wx.cloud.callFunction({
+    //   name: 'userList',
+    //   success: function(res) {
+    //     console.log(res.result)
+    //   },
+    //   fail: console.error
+    // })
+
+    self.requestCategoryData();
+
   }
 
   componentWillUnmount() {}
@@ -29,8 +43,21 @@ export default class Index extends Component {
     super(...arguments);
     this.state = {
       inputValue: '',
-      categoryList: categoryJSON,
+      categoryList: [],
     };
+  }
+
+  requestCategoryData() {
+    const self = this;
+    wx.cloud.callFunction({
+      name: 'categoryList',
+      success: function(res) {
+        self.setState({
+          categoryList: res.result.data
+        });
+      },
+      fail: console.error
+    })
   }
 
   clickCategory(item) {

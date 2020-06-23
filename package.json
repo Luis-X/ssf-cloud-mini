@@ -55,7 +55,8 @@
     "redux": "^4.0.0",
     "regenerator-runtime": "0.11.1",
     "taro-ui": "^2.3.4",
-    "tslib": "^1.8.0"
+    "tslib": "^1.8.0",
+    "wx-server-sdk": "^2.1.2"
   },
   "devDependencies": {
     "@tarojs/mini-runner": "^2.2.9",

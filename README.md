@@ -128,7 +128,7 @@ npm install
 
 
 
-1. 安装
+1.安装
 
 ```powershell
 sudo npm i -g @cloudbase/cli
@@ -136,5 +136,77 @@ sudo npm i -g @cloudbase/cli
 
 
 
-2. 
+2.初始化
+
+```
+cloudbase init
+```
+
+![image-20200623144028538](/Users/luisx/Library/Application Support/typora-user-images/image-20200623144028538.png)
+
+![image-20200623144434808](/Users/luisx/Library/Application Support/typora-user-images/image-20200623144434808.png)
+
+3.本地调试配置 （`project.config.json` 文件，新增 `cloudfunctionRoot` 字段）
+
+```json
+{
+   "cloudfunctionRoot": "./functions/"
+}
+```
+
+![image-20200623144247788](/Users/luisx/Library/Application Support/typora-user-images/image-20200623144247788.png)
+
+
+
+4.安装云函数
+
+```shell
+npm install --save wx-server-sdk@latest
+```
+
+
+
+5.第一个云函数
+
+![image-20200623144847595](/Users/luisx/Library/Application Support/typora-user-images/image-20200623144847595.png)
+
+```javascript
+// 新建add.js云函数：
+
+// 云函数入口文件
+const cloud = require('wx-server-sdk')
+
+cloud.init()
+
+// 云函数入口函数
+exports.main = async (event, context) => {
+  const wxContext = cloud.getWXContext()
+
+  return {
+    sum: event.a + event.b
+  }
+}
+```
+
+
+
+```javascript
+// 小程序端调用：
+
+wx.cloud.init();
+
+wx.cloud.callFunction({
+  // 云函数名称
+  name: 'add',
+  // 传给云函数的参数
+  data: {
+    a: 1,
+    b: 2,
+  },
+  success: function(res) {
+    console.log(res.result.sum) // 3
+  },
+  fail: console.error
+})
+```
 
