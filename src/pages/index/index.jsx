@@ -79,7 +79,7 @@ export default class Index extends Component {
           className="category-box"
           mode="square"
           hasBorder={true}
-          columnNum={3}
+          columnNum={2}
           data={this.state.categoryList}
           onClick={this.clickCategory.bind(this)}
         />

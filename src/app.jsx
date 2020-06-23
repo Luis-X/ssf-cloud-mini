@@ -41,27 +41,6 @@ class App extends Component {
       navigationBarTitleText: 'SweetSevenFlower',
       navigationBarTextStyle: 'black',
     },
-    tabBar: {
-      color: '#1A1210',
-      selectedColor: '#f93450',
-      backgroundColor: '#ffffff',
-      borderStyle: 'white',
-      position: 'bottom',
-      list: [
-        {
-          pagePath: 'pages/index/index',
-          text: '产品介绍',
-          iconPath: 'resources/tabbar/tab_normal_0.png',
-          selectedIconPath: 'resources/tabbar/tab_focus_0.png',
-        },
-        {
-          pagePath: 'pages/contact/contact',
-          text: '联系我们',
-          iconPath: 'resources/tabbar/tab_normal_3.png',
-          selectedIconPath: 'resources/tabbar/tab_focus_3.png',
-        },
-      ],
-    },
   };
 
   // 在 App 类中的 render() 函数没有实际作用
