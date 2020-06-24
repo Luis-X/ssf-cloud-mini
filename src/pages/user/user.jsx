@@ -22,47 +22,74 @@ export default class Index extends Component {
   constructor() {
     super(...arguments);
     this.state = {
+      userInfo: {
+        headImgUrl: 'http://cdn1.showjoy.com/shop/images/20200624/JHSEJ1A9NXCIBESVD3NT1592964381853.png',
+        name: 'LuisX',
+      },
       optionList: [
         {
+          title: '收藏列表',
+          icon: 'http://cdn1.showjoy.com/shop/images/20200624/JHSEJ1A9NXCIBESVD3NT1592964381853.png',
+          url: '/pages/contact/contact',
+        },
+        {
+          title: '订单列表',
+          icon: 'http://cdn1.showjoy.com/shop/images/20200624/6AYOS1TRUBMO4LEJ33VK1592964330182.png',
+          url: '/pages/contact/contact',
+        },
+        {
           title: '联系我们',
-          icon: '',
+          icon: 'http://cdn1.showjoy.com/shop/images/20200624/UQBFSIBSEVP7ALBY9FCR1592964212298.png',
           url: '/pages/contact/contact',
         },
       ],
     };
   }
 
+  clickOptionButton(item) {
+    Taro.navigateTo({
+      url: item.url,
+    });
+  }
+
+  clickConsultButton() {
+    Taro.navigateTo({
+      url: '/pages/consult/consult',
+    });
+  }
+
+  
   render() {
     return (
-      <View class="container">
+      <View className="container">
         <ScrollView className="scroller" scrollY scrollWithAnimation>
-          <View class="info-cell">
+          <View className="info-cell">
             <Image
-              class="info-avatar"
-              src="{{userData.personalCenterVO.headImgUrl}}"
+              className="info-avatar"
+              src={this.state.userInfo.headImgUrl}
               mode="aspectFill"></Image>
-            <View class="info-box">
-              <Text class="info-name">{1111}</Text>
-              <Text class="info-invite">用户ID: {1}</Text>
+            <View className="info-box">
+              <Text className="info-name">{this.state.userInfo.name}</Text>
+              <Text className="info-invite">用户ID: {1}</Text>
             </View>
           </View>
 
-          <View class="option-cell-bg">
-            <View class="option-cell-box">
+          <View className="option-cell-bg">
+            <View className="option-cell-box">
               {this.state.optionList.map((item, index) => {
                 return item ? (
-                  <View class="option-cell">
-                    <Image class="option-icon" mode="aspectFit" src="{{item.icon}}"></Image>
-                    <Text class="option-title">{item.title}</Text>
+                  <View className="option-cell" onClick={this.clickOptionButton.bind(this, item)}>
+                    <Image className="option-icon" mode="aspectFit" src={item.icon}></Image>
+                    <Text className="option-title">{item.title}</Text>
                   </View>
                 ) : null;
               })}
             </View>
           </View>
 
-          <View class="option-cell-bg">
-            <View class="option-cell-box">
-              <Text class="logout-title">退出登录</Text>
+          <View className="option-cell-bg">
+            <View className="option-cell-box" onClick={this.clickConsultButton.bind(this)}>
+              <Text className="logout-title">预约咨询</Text>
             </View>
           </View>
         </ScrollView>

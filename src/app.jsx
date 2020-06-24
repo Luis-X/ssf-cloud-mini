@@ -4,6 +4,7 @@ import Index from './pages/index/index';
 //公共模块
 import HUD from './utils/hud'
 import request from './utils/request'
+import date from './utils/date'
 
 import './app.scss';
 import 'taro-ui/dist/style/index.scss';
@@ -18,6 +19,7 @@ import 'taro-ui/dist/style/index.scss';
 class App extends Component {
   HUD = HUD
   request = request
+  date = date
 
   componentDidMount() {}
 
@@ -34,12 +36,34 @@ class App extends Component {
       'pages/user/user',
       'pages/searchList/searchList',
       'pages/goodsDetail/goodsDetail',
+      'pages/consult/consult'
     ],
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
       navigationBarTitleText: 'SweetSevenFlower',
       navigationBarTextStyle: 'black',
+    },
+    tabBar: {
+      color: '#1A1210',
+      selectedColor: '#f93450',
+      backgroundColor: '#ffffff',
+      borderStyle: 'white',
+      position: 'bottom',
+      list: [
+        {
+          pagePath: 'pages/index/index',
+          text: '产品介绍',
+          iconPath: 'resources/tabbar/tab_normal_0.png',
+          selectedIconPath: 'resources/tabbar/tab_focus_0.png',
+        },
+        {
+          pagePath: 'pages/user/user',
+          text: '我的',
+          iconPath: 'resources/tabbar/tab_normal_3.png',
+          selectedIconPath: 'resources/tabbar/tab_focus_3.png',
+        },
+      ],
     },
   };
 

@@ -25,7 +25,10 @@ export default class Index extends Component {
     //   fail: console.error
     // })
 
-    self.requestCategoryData();
+    // self.requestCategoryData();
+    self.setState({
+      categoryList: categoryJSON
+    });
 
   }
 
@@ -106,7 +109,7 @@ export default class Index extends Component {
           className="category-box"
           mode="square"
           hasBorder={true}
-          columnNum={2}
+          columnNum={3}
           data={this.state.categoryList}
           onClick={this.clickCategory.bind(this)}
         />
